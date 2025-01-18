@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, arial;
+}
+
+#MenuSuperior {
+    background-color: black;
+    width: 100%;
+    height: auto;
+
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+    position: fixed;
+}
+
+#gdIcon {
+    width: 120px;
+    object-fit: contain;
+    margin-right: 40px;
+}
+
+.menuSuperiorItem {
+    color: white;
+    margin: 0 40px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.menuSuperiorItem:hover {
+    transform: scale(1.05);
+}
+
+.menuSuperiorItem:active {
+    transform: scale(0.95);
+}
+
+#conteudo {
+    padding-top: 90px;
+}
+
+#esquerda {
+    /* background-color: blue; */
+    width: 700px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#esquerda #ultima {
+    width: 680px;
+    height: 370px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+#direita {
+    /* background-color: blueviolet; */
+    width: 380px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#direita #segunda,
+#direita #terceira {
+    background-color: black;
+    width: 350px;
+    height: 180px;
+    border-radius: 10px;
+    margin: 5px 0px;
+}
+
+#principaisNoticias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1,
+p,
+h4 {
+    margin: 0;
+}
+
+#noticias {
+    width: 1050px;
+}
+
+.noticia {
+    display: flex;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+
+#noticiaImg {
+    background-color: black;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+#noticiaTexto {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#noticiaTexto h4 {
+    margin-top: 10px;
+}
