@@ -17,6 +17,7 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 
     position: fixed;
+    z-index: 100;
 }
 
 #gdIcon {
@@ -84,7 +85,39 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
 }
+
+.principalNoticia {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.principalNoticia img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.principalNoticia h1,
+.principalNoticia h4 {
+    margin: 10px;
+    position: absolute;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+    width: 20%;
+}
+
+
+
+#ultima h1 {
+    width: 40%;
+}
+
+/* .principalNoticia:hover {
+    transform: scale(1.01);
+} */
 
 #conteudo {
     display: flex;
@@ -110,11 +143,26 @@ h4 {
     border-bottom: 1px solid black;
 }
 
-#noticiaImg {
+.noticia:hover {
+    transform: scale(1.010);
+    cursor: pointer;
+}
+
+.noticia:active {
+    transform: scale(0.95);
+}
+
+.noticiaImg {
     background-color: black;
     width: 250px;
     height: 150px;
     border-radius: 10px;
+    overflow: hidden;
+}
+
+.noticiaImg img {
+    object-fit: cover;
+    height: 100%;
 }
 
 #noticiaTexto {
@@ -122,8 +170,58 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 80%;
 }
 
 #noticiaTexto h4 {
     margin-top: 10px;
+}
+
+#menuInferior {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin-top: 20px;
+    border-top: 5px solid #E00000;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+#icons {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+#icons img {
+    width: 100px;
+    margin: 15px;
+}
+
+input {
+    border: none;
+    border-radius: 20px;
+    padding: 6px;
+    padding-left: 10px;
+    width: 300px;
+    margin-left: 40px;
+}
+
+#proximaPagina {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#proximaPagina input {
+    width: 40px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    margin: 0px 10px;
 }
