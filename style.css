@@ -36,6 +36,7 @@ body {
 
 .menuSuperiorItem:hover {
     transform: scale(1.05);
+    transition: transform 0.2s;
 }
 
 .menuSuperiorItem:active {
@@ -101,6 +102,7 @@ body {
 .principalNoticia img:hover {
     transform: scale(1.1);
     cursor: pointer;
+    transition: transform 0.2s;
 }
 
 .principalNoticia h1,
@@ -143,6 +145,7 @@ h4 {
 .noticia:hover {
     transform: scale(1.010);
     cursor: pointer;
+    transition: transform 0.2s;
 }
 
 .noticia:active {
@@ -252,6 +255,11 @@ iframe {
     overflow: hidden;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     margin: 10px 15px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s;
 }
 
 .cardImg {
